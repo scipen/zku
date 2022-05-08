@@ -35,6 +35,7 @@ describe("SystemOfEquations", function () {
 
     it("Should return true for correct proof", async function () {
         //[assignment] Add comments to explain what each line is doing
+        // ans: same as Q2
         const { proof, publicSignals } = await groth16.fullProve({
             "x": ["15","17","19"],
             "A": [["1","1","1"],["1","2","3"],["2","-1","1"]],
